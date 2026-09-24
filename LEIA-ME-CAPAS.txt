@@ -1,0 +1,22 @@
+U250 V4.2 — CAPAS REAIS DOS ÁLBUNS
+
+COMO USAR
+1. Extraia a pasta inteira.
+2. Dê dois cliques em BAIXAR-CAPAS-U2.bat.
+3. Aguarde o download. O MusicBrainz recomenda no máximo 1 consulta por segundo, então o utilitário respeita esse intervalo.
+4. As imagens serão salvas automaticamente em assets\covers\.
+5. Abra index.html. A Home detecta as capas locais automaticamente.
+
+FALLBACK SEGURO
+Se uma imagem não for encontrada, o site mantém a arte SVG U250 daquela era. Nada fica quebrado.
+
+PADRÃO
+O utilitário tenta obter a capa frontal em 1200 px do Cover Art Archive, usando o release group correspondente no MusicBrainz. Se 1200 px não estiver disponível, tenta 500 px.
+
+CARNAVAL DE LUZ
+Por ser lançamento de 2026, pode demorar para a capa aparecer no MusicBrainz/Cover Art Archive. Se falhar, baixe a capa da página oficial do U2 e salve como:
+assets\covers\16-carnaval.jpg
+Referência: https://www.u2.com/products/carnaval-de-luz
+
+DIREITOS
+Capas de álbuns permanecem protegidas pelos direitos de seus respectivos titulares. O Cover Art Archive/MusicBrainz é usado apenas como fonte técnica do arquivo.
