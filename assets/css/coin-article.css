@@ -1,0 +1,20 @@
+
+.coin-visual-section{padding-top:34px;padding-bottom:34px;background:#e7e0d4;border-bottom:1px solid rgba(8,8,8,.18)}
+.coin-visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.coin-visual-card{margin:0;background:#f6f3ec;border:1px solid rgba(8,8,8,.16);padding:14px}
+.coin-visual-card img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.coin-visual-card figcaption{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:14px 2px 2px;border-top:1px solid rgba(8,8,8,.14);margin-top:12px}
+.coin-visual-card figcaption span{font-size:8px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#77736d}
+.coin-visual-card figcaption strong{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-weight:400;line-height:1.35}
+.coin-credit{margin:14px 0 0;font-size:8px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#77736d}
+.coin-facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0 32px;font-family:Arial,Helvetica,sans-serif}
+.coin-facts>div{border:1px solid rgba(8,8,8,.18);padding:20px;background:#f4efe6}
+.coin-facts span{display:block;font-size:8px;font-weight:900;letter-spacing:.16em;color:#77736d}
+.coin-facts strong{display:block;font-size:54px;letter-spacing:-.06em;line-height:1;margin:12px 0 12px}
+.coin-facts p{font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:1.45;margin:0 0 16px}
+.coin-facts b{font-size:18px}
+@media(max-width:760px){
+  .coin-visual-grid,.coin-facts{grid-template-columns:1fr}
+  .coin-visual-card figcaption{grid-template-columns:1fr}
+  .coin-facts strong{font-size:46px}
+}
