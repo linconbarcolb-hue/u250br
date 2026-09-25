@@ -12,6 +12,7 @@
 <link rel="apple-touch-icon" href="assets/seo/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet" href="assets/css/site.css?v=440">
+<link rel="stylesheet" href="assets/css/hero-slider.css?v=1">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="U250">
@@ -29,22 +30,50 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html" aria-label="U250 — início"><span>U</span><span class="brand-2">2</span><span class="brand-50">50</span></a>
-    <nav class="site-nav" aria-label="Navegação principal"><a href="index.html" aria-current="page">HOME</a><a href="banda.html">BANDA</a><a href="brasil.html">BRASIL</a><a href="noticias.html">NEWS</a><a href="tour.html">TOUR</a></nav>
+    <nav class="site-nav" aria-label="Navegação principal"><a href="index.html" aria-current="page">HOME</a><a href="banda.html">BANDA</a><a href="brasil.html">BRASIL</a><a href="noticias.html">NEWS</a><a href="https://carnaval.u250.com.br/">CARNAVAL</a><a href="tour.html">TOUR</a></nav>
     <div class="header-era">1976 <span class="red">—</span> 2026</div>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Abrir menu">MENU</button>
   </div>
 </header>
 <main id="conteudo">
-<section class="home-hero">
-  <div class="hero-grid">
-    <div class="hero-copy">
-      <div><div class="hero-topline">U250 / BRAZILIAN INDEPENDENT ARCHIVE</div><div class="hero-wordmark"><span>U<span class="red">2</span></span><span>50</span></div></div>
-      <div class="hero-deck"><p>Cinquenta anos de uma banda que nunca tratou o passado como ponto final.</p><strong>1976 → 2026 → ∞</strong></div>
+<section class="home-hero hero-slider" aria-label="Destaques U250">
+  <div class="hero-slides">
+    <article class="hero-slide hero-slide--u250 is-active" data-slide="0" aria-hidden="false">
+      <div class="hero-slide-media"><img src="assets/photos/u2-2018-london.jpg" alt="U2 em apresentação da Experience + Innocence Tour, Londres, 2018"></div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div><div class="hero-topline">U250 / BRAZILIAN INDEPENDENT ARCHIVE</div><h1 class="hero-slide-title hero-slide-title--u250"><span>U<span class="red">2</span></span><span>50</span></h1></div>
+        <div class="hero-slide-bottom"><p class="hero-slide-deck">Cinquenta anos de uma banda que nunca tratou o passado como ponto final.</p><a class="hero-slide-link" href="#story">EXPLORE 1976 → 2026</a></div>
+      </div>
+      <div class="hero-slide-credit">LONDON / 2018 · PHOTO: PAUL JONES · CC BY-SA 4.0</div>
+    </article>
+    <article class="hero-slide hero-slide--carnaval" data-slide="1" aria-hidden="true">
+      <div class="hero-slide-media"><img src="assets/photos/carnaval-cinema-hero.jpg" alt="U2 na campanha visual de Carnaval De Luz"></div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div><div class="hero-topline">U250 SPECIAL PROJECT / NEW ALBUM / 2026</div><h2 class="hero-slide-title hero-slide-title--carnaval">CARNAVAL<br>DE LUZ</h2></div>
+        <div class="hero-slide-bottom"><p class="hero-slide-deck">13 de novembro de 2026. Doze novas músicas. Uma nova era do U2.</p><a class="hero-slide-link hero-slide-link--light" href="https://carnaval.u250.com.br/">ABRIR ESPECIAL →</a></div>
+      </div>
+      <div class="hero-slide-credit">CARNAVAL DE LUZ / U250 SPECIAL PROJECT</div>
+    </article>
+    <article class="hero-slide hero-slide--brasil" data-slide="2" aria-hidden="true">
+      <div class="hero-slide-media"><img src="assets/photos/u2-2017-sao-paulo.jpg" alt="U2 no Brasil durante a Joshua Tree Tour 2017"></div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div><div class="hero-topline">U250 / BRAZIL ARCHIVE</div><h2 class="hero-slide-title">U2 NO<br>BRASIL.</h2></div>
+        <div class="hero-slide-bottom"><p class="hero-slide-deck">1998 · 2006 · 2011 · 2017. Quatro turnês, 12 shows e um arquivo noite por noite.</p><a class="hero-slide-link" href="brasil.html">ABRIR ARQUIVO BRASIL →</a></div>
+      </div>
+      <div class="hero-slide-credit">SÃO PAULO / 2017 · THE JOSHUA TREE TOUR</div>
+    </article>
+  </div>
+  <div class="hero-slider-ui" aria-label="Controles do destaque">
+    <button class="hero-arrow hero-prev" type="button" aria-label="Slide anterior">←</button>
+    <div class="hero-dots" role="tablist" aria-label="Selecionar destaque">
+      <button class="hero-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Destaque 1"><span>01</span></button>
+      <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Destaque 2"><span>02</span></button>
+      <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Destaque 3"><span>03</span></button>
     </div>
-    <div class="hero-media">
-      <img src="assets/photos/u2-2018-london.jpg" alt="U2 em apresentação da Experience + Innocence Tour, Londres, 2018">
-      <div class="hero-caption"><span>LONDON / 2018</span><span>PHOTO: PAUL JONES · CC BY-SA 4.0</span></div>
-    </div>
+    <button class="hero-arrow hero-next" type="button" aria-label="Próximo slide">→</button>
   </div>
 </section>
 <section class="section" id="story"><div class="shell intro-grid">
@@ -198,15 +227,16 @@
   <div class="spacer-top"><a class="link-arrow" href="noticias.html">Abrir U250 News →</a></div>
 </div></section>
 <section class="now-band">
-  <div class="now-copy"><p class="eyebrow">05 / NOW</p><h2 class="title-lg">CARNAVAL<br>DE LUZ.</h2><p>13 de novembro de 2026. 12 músicas. Produção de Jacknife Lee. O primeiro álbum de material novo do U2 em nove anos.</p><a class="link-arrow" href="noticias/carnaval-de-luz-novo-album.html">O que já foi confirmado →</a></div>
+  <div class="now-copy"><p class="eyebrow">05 / NOW</p><h2 class="title-lg">CARNAVAL<br>DE LUZ.</h2><p>13 de novembro de 2026. 12 músicas. Produção de Jacknife Lee. O primeiro álbum de material novo do U2 em nove anos.</p><a class="link-arrow" href="https://carnaval.u250.com.br/">Abrir especial Carnaval De Luz →</a></div>
   <div class="tracklist-mini"><div class="meta">TRACKLIST OFICIAL / 2026</div><ol><li>Go (Carnaval De Luz)</li><li>La Reina</li><li>Street Of Dreams</li><li>The Mirror Maker (Rosalía)</li><li>Superficiality</li><li>If The World Is At War We Better Not Be</li><li>Silencio</li><li>The Greatest Show On Earth</li><li>Glorify</li><li>Midnight Sunshine</li><li>Can't Stop Us Now</li><li>Torn (Feat. Dolly Parton)</li></ol></div>
 </section>
 </main><footer class="site-footer">
   <div class="shell footer-inner">
     <a class="footer-brand" href="index.html"><span>U</span><span class="brand-2">2</span>50</a>
     <div class="footer-era">1976 — 2026</div>
-    <div class="footer-meta">Independent fan project celebrating 50 years of U2.<br><a href="https://www.instagram.com/u2.50br/" target="_blank" rel="noopener">@U2.50BR</a> · <a href="credits.html">Créditos</a><br>Não afiliado ou endossado pelo U2 ou seus representantes.</div>
+    <div class="footer-meta">Independent fan project celebrating 50 years of U2.<br><a href="https://www.instagram.com/u2.50br/" target="_blank" rel="noopener">@U2.50BR</a> · <a href="https://carnaval.u250.com.br/">Carnaval De Luz Special</a> · <a href="credits.html">Créditos</a><br>Não afiliado ou endossado pelo U2 ou seus representantes.</div>
   </div>
 </footer>
 <script src="assets/js/site.js?v=420" defer></script>
+<script src="assets/js/hero-slider.js?v=1" defer></script>
 </body></html>
